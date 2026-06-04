@@ -1,49 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BANDERAS</title>
     <link href="style.css" rel="stylesheet" />
+    <script type="module" src="./todasLasBanderas.js"></script>
   </head>
 
-<body>
-  <nav class="h-25 flex items-center justify-between px-5 shadow">
-    <p class="font-bold">Where in the world?</p>
-    <button>🌙 Dark Mode</button>
-  </nav>
-  <main class="bg-gray-100 pt-5 px-5">
-    <section class="flex flex-col gap-4 mb-5">
-      <input class="bg-white px-7 py-5 shadow" type="text" placeholder="🔍 Search for a country...">
-      <select class="bg-white w-62.5 px-8 py-4 shadow" name="" id="">
-        <option value="">Filter by Region</option>
-        <option value="">Africa</option>
-        <option value="">America</option>
-        <option value="">Asia</option>
-      </select>
-    </section>
-
-    <!-- tarjeta de banderas -->
-    <section class="flex flex-col items-center gap-15">
-  <div class="max-w-75 bg-white rounded-md overflow-hidden">
-    <img src="https://flagcdn.com/de.svg" alt="">
-    <div class="px-6 py-10">
-      <p class="text-xl font-bold mb-4">Germany</p>
-      <p><span class="font-semibold">Population: </span>987987</p>
-      <p><span class="font-semibold">Region: </span> Europa</p>
-      <p><span class="font-semibold">Capital </span>: Berlin</p>
-    </div>
-  </div>
-  <div class="max-w-75 bg-white rounded-md overflow-hidden">
-    <img src="https://flagcdn.com/us.svg" alt="">
-    <div class="px-6 py-10">
-      <p class="text-xl font-bold mb-4">United States of America</p>
-      <p><span class="font-semibold">Population: </span>987987</p>
-      <p><span class="font-semibold">Region: </span> America</p>
-      <p><span class="font-semibold">Capital </span>: Washington</p>
-    </div>
-  </div>
-</section>
+  <body>
+    <nav
+      class="h-25 flex items-center justify-between px-5 shadow md:px-15 dark:bg-[#2b3743] dark:text-white"
+    >
+      <p class="font-bold">Where in the world?</p>
+      <button id="darkmode">🌙 Dark Mode</button>
+    </nav>
+    <main class="bg-gray-100 pt-5 px-5 dark:bg-[#202d36] dark:text-white">
+      <section
+        class="flex flex-col md:flex-row gap-4 mb-5 justify-between md:px-15 md:py-7"
+      >
+        <input
+          class="bg-white px-7 py-5 shadow md:w-100 dark:bg-[#2b3743]"
+          type="text"
+          placeholder="      Search for a country..."
+        />
+        <select
+          class="bg-white w-62.5 px-8 py-4 shadow dark:bg-[#2b3743]"
+          name=""
+          id=""
+        >
+          <option value="">Filter by Region</option>
+          <option value="">Africa</option>
+          <option value="">America</option>
+          <option value="">Asia</option>
+        </select>
+      </section>
+      <section
+        id="banderas"
+        class="flex flex-col md:flex-row md:flex-wrap items-center gap-15 md:px-15"
+      >
+    
+        </div>
+      </section>
+    </main>
   </body>
 </html>
