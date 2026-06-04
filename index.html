@@ -20,20 +20,21 @@
       <section
         class="flex flex-col md:flex-row gap-4 mb-5 justify-between md:px-15 md:py-7"
       >
-        <input
+        <input id = "filtroInput"
           class="bg-white px-7 py-5 shadow md:w-100 dark:bg-[#2b3743]"
           type="text"
           placeholder="      Search for a country..."
         />
-        <select
+        <select id="filtroRegion"
           class="bg-white w-62.5 px-8 py-4 shadow dark:bg-[#2b3743]"
-          name=""
-          id=""
-        >
-          <option value="">Filter by Region</option>
-          <option value="">Africa</option>
-          <option value="">America</option>
-          <option value="">Asia</option>
+          name="">
+          <option value="todas">Todas</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europa</option>
+          <option value="Oceania">Oceania</option>
+          <option value="Polar">Polar</option>
         </select>
       </section>
       <section
